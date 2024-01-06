@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <title>Contact</title>
+</head>
+<body>
+
+    <video autoplay muted loop id="sectionVideo">
+        <source src="videos/index_video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <nav class="transparent-nav">
+        <a href="index.html"><img src="images/pd_logo.png" alt="Logo" class="logo"></a>
+        <div class="nav-links">
+            <a href="portfolio.html">Portfolio</a>
+            <a href="about.html">About</a>
+            <a href="contact.html"><span style="color: #13EDA2;">Contact</span></a>
+            <a href="https://www.instagram.com/boyang.koh/" target="_blank"><img src="images/insta_icon.png" alt="Instagram" class="icon"></a>
+            <a href="https://www.linkedin.com/in/koh-boyang-282b54237/" target="_blank"><img src="images/linkedin_icon.png" alt="LinkedIn" class="icon"></a>
+        </div>
+    </nav>
+
+<div class="contact-stuff">
+    <div class="contact-section">
+        <div class="centered-text3">
+            <h1 id="contact-header">Contact</h1>
+            <p id="contact-para">If you are interested in my works, feel free to contact me!</p>
+            <p id="contact-info">
+                <span id="email-info" style="color: white"><a href="mailto:22020749@myrp.edu.sg">Email: 22020749@myrp.edu.sg</span></a>
+            </p>
+            <p id="contact-info">
+                <span id="linkedin-info"><a href="https://www.linkedin.com/in/koh-boyang-282b54237/" target="_blank">LinkedIn: Koh Boyang</span></a>
+            </p>
+            <p id="contact-info">
+                <span id="instagram-info"><a href="https://www.instagram.com/boyang.koh/" target="_blank">Instagram: @boyang.koh</span></a>
+            </p>
+        </div>
+
+        <div class="contact-form">
+            <form action="#" method="post">
+                <h2>Contact Form</h2>
+                <div class="name-fields">
+                    <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+                    <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+                </div>
+                <div class="contact-fields">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone" required>
+                </div>
+                <textarea id="message" name="message" placeholder="Leave me a message..."></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

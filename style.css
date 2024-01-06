@@ -1,0 +1,322 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    overflow-y: auto;
+}
+
+
+#backgroundVideo {
+    position: fixed;
+    right: 1;
+    bottom: 1;
+    min-width: 120%;
+    min-height: 150%;
+    z-index: -1;
+}
+
+#sectionVideo {
+    position: fixed;
+    right: 1;
+    bottom: 1;
+    min-width: 120%;
+    min-height: 150%;
+    z-index: -1;
+    opacity: 50%;
+}
+
+.transparent-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    width: 95%;
+    max-height: 100px; /* Set a maximum height for the navigation bar */
+    background-color: rgba(255, 255, 255, 0); /* Adjust transparency as needed */
+    z-index: 1;
+}
+
+.logo { /* Main logo */
+    width: 170px;
+    margin-top: 70px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 50px;
+}
+
+.nav-links a { /* Navigations */
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 45px;
+}
+
+.nav-links a:hover { /* To make navigations enlarge & change color when hovered */
+    transform: scale(1.5);
+    color: #13ED35;
+}
+
+.icon { /* Insta & Linkedin Icon */
+    width: 30px;
+    height: 30px;
+    max-height: 50px;
+}
+
+.centered-text {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    transform: translate(0%, -50%);
+    text-align: left;
+    color: #fff;
+}
+
+.centered-text h1 {
+    font-size: 100px;
+    margin-bottom: 10px;
+    text-shadow: 3px 8px 5px #737779;
+}
+
+.centered-text p {
+    font-size: 40px;
+    margin: 0;
+    text-shadow: 3px 8px 5px #737779;
+}
+
+
+.portfolio-section {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    transition: transform 0.5s ease-in-out;
+    margin-bottom: -200px;
+}
+
+.sectionHeads {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-shadow: 3px 8px 5px #000000;
+}
+
+h2 {
+    color: #FFFFFF;
+    margin-top: 300px;
+
+}
+
+.subsection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.subsection-image {
+    position: relative;
+    width: 450px;
+    height: 300px;
+    overflow: hidden;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.subsection-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    filter: brightness(50%);
+}
+
+.subsection-image video {
+    width: 110%;
+    height: 120%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    filter: brightness(50%);
+}
+
+.subsection-image:hover img {
+    transform: scale(1.1);
+    filter: brightness(100%);
+}
+
+.subsection-image:hover video {
+    transform: scale(1.1);
+    filter: brightness(100%);
+}
+
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    text-align: center;
+    font-size: 26px;
+    text-shadow: 1px 1px 20px #000000;
+}
+
+.about-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.about-content {
+    max-width: 600px;
+    text-align: left;
+    padding: 20px;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 400px;
+}
+
+.centered-text2 {
+    color: #fff;
+    margin-top: 400px;
+}
+
+.centered-text2 h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.centered-text2 p {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+    line-height: 1.5;
+}
+
+.skills-achievements-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 200px;
+}
+
+.skills-set {
+    display: flex;
+    justify-content: left;
+}
+
+.achievement {
+    max-width: 500px;
+    justify-content: right;
+}
+
+.section-header {
+    font-size: 3em;
+    color: #13CBED;
+    margin-bottom: 0px;
+    text-shadow: 1px 1px 1px #ffffff;
+}
+
+.sub-section {
+    margin-bottom: 10px;
+}
+
+.sub-section p {
+    font-size: 1em;
+    color: #ffffff;
+}
+
+#subhead {
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#contact-header {
+    font-size: 3em;
+    color: #FFFFFF;
+}
+
+#contact-para,
+#contact-info a,
+#email-info a,
+#linkedin-info a,
+#instagram-info a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+    font-size: 20px;
+}
+
+#contact-info a:hover,
+#email-info a:hover,
+#linkedin-info a:hover,
+#instagram-info a:hover {
+    color: #13EDA2;
+    transform: scale(1.1);
+    text-decoration: none;
+}
+
+.contact-form {
+    width: 30%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 450px;
+}
+
+h2 {
+    font-size: 2em;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.name-fields,
+.contact-fields {
+    display: flex;
+    gap: 15px;
+    width: 450px;
+}
+
+input,
+textarea,
+button {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+button {
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #13EDA2;
+}
+
+.centered-text3 {
+    color: #fff;
+    margin-top: 250px;
+    margin-left: 80px;
+}
+
+.contact-stuff {
+    scale: 120%;
+    justify-content: center;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <title>About</title>
+</head>
+<body>
+
+    <video autoplay muted loop id="sectionVideo">
+        <source src="videos/index_video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <nav class="transparent-nav">
+        <a href="index.html"><img src="images/pd_logo.png" alt="Logo" class="logo"></a>
+        <div class="nav-links">
+            <a href="portfolio.html">Portfolio</a>
+            <a href="about.html"><span style="color: #13EDA2;">About</span></a>
+            <a href="contact.html">Contact</a>
+            <a href="https://www.instagram.com/boyang.koh/" target="_blank"><img src="images/insta_icon.png" alt="Instagram" class="icon"></a>
+            <a href="https://www.linkedin.com/in/koh-boyang-282b54237/" target="_blank"><img src="images/linkedin_icon.png" alt="LinkedIn" class="icon"></a>
+        </div>
+    </nav>
+
+    <div class="about-section">
+        <div class="centered-text2">
+            <h1 id="about-header">About Me.</h1>
+            <div id="about-text" class="about-content">
+                <p>I'm <span style="color: #13EDA2;">Koh Bo Yang</span>, a student from Republic Polytechnic, currently taking a <span style="color: #13EDA2;">Diploma in Digital Design and Development</span>. 
+                <p>Since young, I have <span style="color: #13EDA2;">always indulged myself in creativity-driven activities</span> such as learning instruments, drawing, and editing. Though I may not be the best at these fields, I always find joy in them as they allow me to express my creativity in different ways. 
+                <p>I have also always been a <span style="color: #13EDA2;">big fan of technology</span>, often doing research and learning more. At the age of <span style="color: #13EDA2;">15</span>, I even built my own personal computer. Since then, my love for technology has been ever-growing.</p>
+                <p>During my free time, I like to game, watch shows, or listen to music.</p>
+                <p>A reason why I took this diploma was because I hoped and believed that this course will not only <span style="color: #13EDA2;">allow me to express my creativity but also allow me to learn more about the IT side of things</span>.</p>
+            </div>
+        </div>
+        <div class="about-image">
+            <img src="images/boyang_picture_4.jpg" alt="Bo Yang Picture">
+        </div>
+    </div>
+
+    <div class="skills-achievements-section">
+        <div class="skill-set">
+            <h1 class="section-header">SKILL SETS</h1>
+            <div class="sub-section">
+                <p id="subhead"><span style="color: #13EDA2" >Programming:</span></p>
+                <p>- Python</p>
+                <p>- Java</p>
+                <p>- Web Application (PHP)</p>
+                <p id="subhead"><span style="color: #13EDA2;">Designing:</span></p>
+                <p>- Mobile interface design</p>
+                <p>- Digital illustration & imaging</p>
+                <p>- Interactive web design</p>
+                <p>- UI/UX for Apps</p>
+                <p>- 3D Model Creations (intermediate)</p>
+                <p id="subhead"><span style="color: #13EDA2;">Programs/Applications:</span></p>
+                <p>- Microsoft Office</p>
+                <p>- Adobe Photoshop</p>
+                <p>- Adobe Illustrator</p>
+                <p>- Adobe XD</p>
+                <p>- Adobe Premier Pro</p>
+                <p>- Android Studios</p>
+                <p>- Blender (intermediate)</p>
+                <p>- Unity (intermediate)</p>
+            </div>
+        </div>
+    
+        <div class="achievement">
+            <h1 class="section-header">ACHIEVEMENTS</h1>
+            <div class="sub-section">
+                <p id="subhead"><span style="color: #13EDA2;">Leadership:</span></p>
+                <p>- Lower & Upper Secondary CCA Vice-Chairperson</p>
+                <p>- Lower Secondary Class Chairperson</p>
+                <p>- Secondary School Peer Support Leader</p>
+                <p id="subhead"><span style="color: #13EDA2;">Competitions/Events:</span></p>
+                <p>- Certificate of Distinction (SYF 2019, Guzheng)</p>
+                <p>- Represented School at PassionArts Festival</p>
+                <p>- Obtained Merit Award @ Elementz Science Research Competiton and Exhibition</p>
+                <p id="subhead"><span style="color: #13EDA2;">Workshops & Experiences:</span></p>
+                <p>- Participated in Cyberwellness Workshop (Internet Addiction)</p>
+                <p>- Participated in Video Editing Workshop (NParks Wildlife Documentary Production Workshop)</p>
+                <p>- Certificate of Completion (Singtel Cyber Security Experience)</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        anime.timeline({loop: false})
+            .add({
+                targets: '#about-header',
+                translateY: [-50, 0],
+                opacity: [0, 1],
+                easing: 'easeOutExpo',
+                duration: 1500
+            })
+            .add({
+                targets: '#about-text',
+                translateY: [50, 0],
+                opacity: [0, 1],
+                easing: 'easeOutExpo',
+                duration: 1500
+            }, '-=1000');
+            anime.timeline({loop: false})
+        .add({
+            targets: '.skill-set',
+            translateY: [-50, 0],
+            opacity: [0, 1],
+            easing: 'easeOutExpo',
+            duration: 1500
+        })
+        .add({
+            targets: '.achievement',
+            translateY: [-50, 0],
+            opacity: [0, 1],
+            easing: 'easeOutExpo',
+            duration: 1500
+        }, '-=1500');
+    </script>
+
+</body>
+</html>
