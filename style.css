@@ -137,13 +137,14 @@ h2 {
 .subsection-image video {
     width: 110%;
     height: 120%;
+    transform: scale(2,2);
     object-fit: cover;
     transition: transform 0.3s ease-in-out;
     filter: brightness(50%);
 }
 
 .subsection-image:hover img {
-    transform: scale(1.1);
+    transform: scale(3.3);
     filter: brightness(100%);
 }
 
