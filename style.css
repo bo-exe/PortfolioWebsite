@@ -124,7 +124,6 @@ h2 {
     overflow: hidden;
     margin: 10px;
     cursor: pointer;
-    margin-bottom: 100px;
 }
 
 .subsection-image img {
@@ -391,6 +390,97 @@ h2 {
 }
 
 .touch-content {
+    color: white;
+    text-align: center;
+    margin-bottom: -300px;
+}
+
+.backbutton a {
+    color: #ffffff;
+    display: flex;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.backbutton a:hover {
+    transform: scale(1.1);
+    color: #13EDA2;
+}
+
+
+.image-textposter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    text-align: center;
+    font-size: 26px;
+    text-shadow: 5px 5px 20px #000000;
+}
+
+.poster-section {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    transition: transform 0.5s ease-in-out;
+    margin-bottom: -200px;
+}
+
+.sectionHeadsposter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-shadow: 3px 8px 5px #000000;
+}
+
+h2 {
+    color: #FFFFFF;
+
+}
+
+.subsectionposter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.subsectionposter iframe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.subsection-imageposter {
+    position: relative;
+    width: 424.8px;
+    height: 636px;
+    overflow: hidden;
+    margin: 10px;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.subsection-imageposter img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+    filter: brightness(100%);
+}
+
+.subsection-imageposter:hover img {
+    transform: scale(1.1);
+}
+
+.poster-content {
     color: white;
     text-align: center;
     margin-bottom: -300px;
