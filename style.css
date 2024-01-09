@@ -588,3 +588,69 @@ h2 {
     text-align: center;
     margin-bottom: -300px;
 }
+
+.image-textexplore {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    text-align: center;
+    font-size: 26px;
+    text-shadow: 5px 5px 20px #000000;
+}
+
+.explore-section {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    transition: transform 0.5s ease-in-out;
+    margin-bottom: -200px;
+}
+
+.sectionHeadsexplore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-shadow: 3px 8px 5px #000000;
+}
+
+h2 {
+    color: #FFFFFF;
+
+}
+
+.subsectionexplore {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.subsection-imageexplore {
+    position: relative;
+    width: 532.3px;
+    height: 320.2px;
+    overflow: hidden;
+    margin: 10px;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.subsection-imageexplore img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+    filter: brightness(100%);
+}
+
+.subsection-imageexplore:hover img {
+    transform: scale(1.1);
+}
+
+.explore-content {
+    color: white;
+    text-align: center;
+    margin-bottom: -300px;
+}
