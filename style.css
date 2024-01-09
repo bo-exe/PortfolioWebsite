@@ -507,7 +507,24 @@ h2 {
     margin-bottom: -200px;
 }
 
+.channel-section {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    transition: transform 0.5s ease-in-out;
+    margin-bottom: -200px;
+}
+
 .sectionHeadsillus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-shadow: 3px 8px 5px #000000;
+}
+
+.sectionHeadschannel {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -526,10 +543,36 @@ h2 {
     justify-content: center;
 }
 
+.subsectionchannel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .subsection-imageillus {
     position: relative;
     width: 532.3px;
     height: 320.2px;
+    overflow: hidden;
+    margin: 10px;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.subsection-imagebestvid {
+    position: relative;
+    width: 532.3px;
+    height: 320.2px;
+    overflow: hidden;
+    margin: 10px;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.subsection-imagechannel {
+    position: relative;
+    width: 400px;
+    height: auto;
     overflow: hidden;
     margin: 10px;
     cursor: pointer;
@@ -650,6 +693,80 @@ h2 {
 }
 
 .explore-content {
+    color: white;
+    text-align: center;
+    margin-bottom: -300px;
+}
+
+
+.image-textvideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    text-align: center;
+    font-size: 26px;
+    text-shadow: 5px 5px 20px #000000;
+}
+
+.video-section {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    transition: transform 0.5s ease-in-out;
+    margin-bottom: -200px;
+}
+
+.sectionHeadsvideo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-shadow: 3px 8px 5px #000000;
+}
+
+h2 {
+    color: #FFFFFF;
+    margin-top: 300px;
+
+}
+
+.subsectionvideo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.subsectionvideo iframe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.subsection-imagevideo {
+    position: relative;
+    width: 450px;
+    height: 300px;
+    overflow: hidden;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.subsection-imagevideo img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+    filter: brightness(50%);
+}
+
+.subsection-imagevideo:hover img {
+    filter: brightness(100%);
+}
+
+.video-content {
     color: white;
     text-align: center;
     margin-bottom: -300px;
